@@ -1,13 +1,14 @@
 'use client'
 import Link from "next/link";
 import { useState } from "react";
+import Button from "../button/button";
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <section className="header">
         <nav>
-            <a href="index.html" className="logo">Xplore
+            <a href="/" className="logo">Xplore
                 <i className="fab fa-staylinked"></i>kill
             </a>
             <div className="nav-links" id="navLinks" style={{right: menuOpen ? '0' : '-200%'}}>
@@ -29,7 +30,7 @@ const Navbar = () => {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequuntur corrupti sapiente aut porro
                 <br /> esse blanditiis in quae perspiciatis quo.
             </p>
-            <a href="#" className="hero_btn">Visit Us To Know More</a>
+            <Button text="Visit Us To Know More" />
         </div>
         </section>
   )

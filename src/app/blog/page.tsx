@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Nav from "../components/nav/nav"
+import Button from "../components/button/button"
 export default function Blog() {
     return (
         <body>
@@ -36,7 +37,7 @@ export default function Blog() {
                                 <input type="text" placeholder="Enter Name" required />
                                 <input type="email" placeholder="Enter Email" required />
                                 <textarea placeholder="Your Comment"></textarea>
-                                <button type="submit" className="hero_btn btn">POST COMMENT</button>
+                                <Button btn="btn" text="POST COMMENT" />
                             </form>
                         </div>
                     </div>

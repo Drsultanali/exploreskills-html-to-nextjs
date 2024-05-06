@@ -1,3 +1,5 @@
+import Button from "../components/button/button";
+import Input from "../components/inputbox/input";
 import Nav from "../components/nav/nav";
 
 export default function Contact() {
@@ -37,17 +39,17 @@ export default function Contact() {
                     </div>
                     <div className="content-col">
                         <form>
-                            <input type="text" placeholder="Enter Name" required />
-                            <input type="email" placeholder="Enter Email" required />
-                            <input type="text" placeholder="Enter Subject" required />
+                            <Input type="text" placeHolder="Enter Name" />
+                            <Input type="email" placeHolder="Enter Email" />
+                            <Input type="text" placeHolder="Enter Subject" />
                             <textarea placeholder="Message" required></textarea>
-                            <button type="submit" className="hero_btn btn">Send Message</button>
+                            <Button btn="btn" text="Send Message" />
                         </form>
                     </div>
                 </div>
             </section>
 
-    
+
         </>
     )
 }

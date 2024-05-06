@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Nav from "../components/nav/nav"
+import Button from "../components/button/button"
 export default function About () {
     return (
         <body>
@@ -9,7 +10,7 @@ export default function About () {
             <div className="about-col">
                 <h1>We are the world&apos;s largest University</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque in accusantium molestias maiores fuga vitae eos, ducimus officiis repudiandae voluptatem error. Laboriosam, numquam blanditiis aspernatur, nobis tempora consequatur id aliquam asperiores voluptatum iste animi voluptatem fugiat totam excepturi dolor.</p>
-                <a href="#" className="hero_btn btn">EXPLORE NOW</a>
+                <Button btn="btn" text="EXPLORE NOW" />
             </div>
             <div className="about-col">
                 <Image src="/about.png" alt="" width={400} height={400} />
